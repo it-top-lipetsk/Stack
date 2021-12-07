@@ -1,38 +1,14 @@
 ﻿namespace StackLib
 {
-    public class Element
+    public class Element<T>
     {
-        public int value;
-        public Element next;
-        public Element prev;
+        public T value;
+        public Element<T> link;
 
-        public Element()
-        {
-            Init(0, null, null);
-        }
-
-        public Element(int value)
-        {
-            Init(value, null, null);
-        }
-
-        public Element(int value, Element prev, Element next)
-        {
-            Init(value, prev, next);
-        }
-
-        public Element(Element element)
-        {
-            value = element.value;
-            prev = element.prev;
-            next = element.next;
-        }
-
-        private void Init(int value, Element prev, Element next)
+        public Element(T value)
         {
             this.value = value;
-            this.next = next;
-            this.prev = prev;
+            link = null;
         }
     }
 }

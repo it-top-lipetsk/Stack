@@ -1,39 +1,44 @@
-﻿using System.Net;
+﻿using System;
 
 namespace StackLib
 {
-    public class Stack
+    public class Stack<T>
     {
-        private Element _element;
+        private Element<T> _head;
 
         public Stack()
         {
-            _element = new Element();
+            _head = null;
         }
 
-        public Stack(int value)
+        public Stack(T value)
         {
-            _element = new Element(value);
+            _head = new Element<T>(value);
         }
 
-        public void Push(int value)
+        public void Push(T value)
         {
-            var temp = new Element(value);
-
-            _element.next = temp;
-            temp.prev = _element;
-        }
-
-        public int Pop()
-        {
-            var current = new Element(_element);
-
-            do
+            var temp = new Element<T>(value)
             {
-                current = current.next;
-            } while (current.next != null);
+                link = _head
+            };
+            
+            _head = temp;
+        }
 
-            return current.value;
+        public T Pop()
+        {
+            if (_head == null)
+            {
+                throw new IndexOutOfRangeException("Пустой стек");
+            }
+            
+            var value = _head.value;
+
+            var temp = _head;
+            _head = temp.link;
+
+            return value;
         }
     }
 }

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsApp", "GenericsApp\GenericsApp.csproj", "{9B10FCED-047A-4F89-AA37-49221994F8EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackLib", "StackLib\StackLib.csproj", "{30F8291A-F5F1-46B2-BF0A-7E273A5E84EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B10FCED-047A-4F89-AA37-49221994F8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B10FCED-047A-4F89-AA37-49221994F8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B10FCED-047A-4F89-AA37-49221994F8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B10FCED-047A-4F89-AA37-49221994F8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F8291A-F5F1-46B2-BF0A-7E273A5E84EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F8291A-F5F1-46B2-BF0A-7E273A5E84EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F8291A-F5F1-46B2-BF0A-7E273A5E84EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F8291A-F5F1-46B2-BF0A-7E273A5E84EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
